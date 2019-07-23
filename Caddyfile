@@ -7,7 +7,7 @@
         branch development
         hook /webhook "zU3687$aJEb6"
         key ~/.ssh/id_rsa
-        path . 
+        path /opt/www_veda-retreats
     }
 
 #    mailout /www_veda-retreats {
