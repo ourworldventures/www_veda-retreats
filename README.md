@@ -1,3 +1,3 @@
 # www_veda-retreats
 # start caddy server
-# caddy -conf /home/cloudscalers/sites/git-veda-retreats/Caddyfile
+# caddy -conf /opt/www_veda-retreats/Caddyfile
