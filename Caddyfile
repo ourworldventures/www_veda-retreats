@@ -2,6 +2,13 @@
     bind 0.0.0.0
     gzip
     root public
+    git {
+        repo https://github.com/veda-websites/www_veda-retreats
+        branch development
+        hook /webhook "zU3687$aJEb6"
+        key ~/.ssh/id_rsa
+        path . 
+    }
 
 #    mailout /www_veda-retreats {
 #       maillog     log/caddy-mailout.log
