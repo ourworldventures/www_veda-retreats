@@ -431,52 +431,52 @@ $('.close-alert').click(
 Contact Form
 -----------------------------------*/
 
-$(document).ready(function ($) {
-  "use strict";
+// $(document).ready(function ($) {
+//   "use strict";
 
-  $('#submit').click(function(){
+//   $('#submit').click(function(){
 
-    $('.error').hide();
+//     $('.error').hide();
 
-    var name = $('input#name').val();
-    var email = $('input#email').val();
-    var phone = $('input#phone').val();
-    var email_compare = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; // compare to email input
-    var phone_compare = /^[0-9-+]+$/; // compare to phone input
+//     var name = $('input#name').val();
+//     var email = $('input#email').val();
+//     var phone = $('input#phone').val();
+//     var email_compare = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; // compare to email input
+//     var phone_compare = /^[0-9-+]+$/; // compare to phone input
 
-    if (name == "" || name == " ") {
-      $('#error-name').fadeIn('slow');
-      return false;
+//     if (name == "" || name == " ") {
+//       $('#error-name').fadeIn('slow');
+//       return false;
 
-    } else if (email == "" || email == " ") {
-      $('#error-email').fadeIn('slow');
-      return false;
+//     } else if (email == "" || email == " ") {
+//       $('#error-email').fadeIn('slow');
+//       return false;
 
-    } else if (!email_compare.test(email)) {
-      $('#error-valid-email').fadeIn('slow');
-      return false;
-    }
+//     } else if (!email_compare.test(email)) {
+//       $('#error-valid-email').fadeIn('slow');
+//       return false;
+//     }
     // } else if (!phone_compare.test(phone)) {
     //   $('#error-valid-phone').fadeIn('slow');
     //   return false;
     // }
 
-    var data_string = $('#contact-us').serialize();
+    // var data_string = $('#contact-us').serialize();
 
-    return $.ajax({
-      type: "POST",
-      url: 'http://veda-retreats.com/www_veda-retreats',
-      data: data_string,
-      timeout: 6e3,
-      error: function(request, error) {
-        "timeout" == error ? $("#error-timedout").slideDown("slow") : $("#error-state").slideDown("slow")
-      },
-      success: function() {
-        $("#email-success").slideDown("slow"), $("#contact-us").trigger("reset")
-      }
-    }), !1
-  });
-});
+//     return $.ajax({
+//       type: "POST",
+//       url: 'http://veda-retreats.com/www_veda-retreats',
+//       data: data_string,
+//       timeout: 6e3,
+//       error: function(request, error) {
+//         "timeout" == error ? $("#error-timedout").slideDown("slow") : $("#error-state").slideDown("slow")
+//       },
+//       success: function() {
+//         $("#email-success").slideDown("slow"), $("#contact-us").trigger("reset")
+//       }
+//     }), !1
+//   });
+// });
 
 
  /*-----------------------------------
