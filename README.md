@@ -4,7 +4,9 @@
 
 The official website of Veda Retreats
 
-[https://veda-retreats.com](https://veda-retreats.com)
+production(master branch) [https://veda-retreats.com](https://veda-retreats.com)
+
+staging(development branch) [https://veda-retreats.com](https://veda-retreats.com)
 
 Last Updated: March 2023
 
