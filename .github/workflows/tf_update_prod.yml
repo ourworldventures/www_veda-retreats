@@ -1,7 +1,7 @@
-name: veda-retreats
-on: 
+name: www.veda-retreats.com
+on:
   push:
-    branch: [ master ]
+    branches: [ master ]
 
 jobs:
   job_one:
@@ -12,10 +12,11 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: www.veda-retreats.com
-        username: ${{ secrets.TF_USER }}
+        username: webuser
         key: ${{ secrets.TF_SECRET }}
-        port: ${{ secrets.TF_PORT }}
+        port: 34022
         script: |
-          cd ~/websites/www_veda-retreats
+          cd websites/www_veda-retreats/
           git log -1
+          git restore .
           git pull
